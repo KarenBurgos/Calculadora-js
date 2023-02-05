@@ -1,0 +1,64 @@
+:root {
+    --background-color: #ff9ec0;
+    --button-color:#ffbcd3;
+    --hover-color: #fdcbde;
+    --click-color: #dd769a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+        
+}
+#container {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 6vw);
+    grid-template-rows: 11vw 6vw 6vw 6vw 6vw 6vw;
+    background-color: var(--background-color);
+    padding: 1.5vw;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+}
+
+#display{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: right;
+    padding: 2vw;
+    font-size: 1.3em;
+    border: 0;
+    margin-bottom: 5vh;
+    border-radius: 0.6rem;
+    background-color: rgb(247, 247, 247);
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+input {
+    margin: 0.3vw;
+    font-size: 1.4em;
+    border: 0;             
+}
+
+.button {
+    border-radius: 4rem;
+    background-color: var(--button-color);
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.button:hover {
+    background-color: var(--hover-color);
+}
+
+.button:active {
+    background-color: var(--click-color);
+    transform: scale(0.9, 0.9);
+}
+
